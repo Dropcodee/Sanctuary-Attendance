@@ -1,3 +1,17 @@
+/* color variables */
+$material-purple: #283593
+$midnight-grey: #2c3e50
+$material-teal: #16a085
+$material-white: #f5f5f5
+$material-grey: #bdbdbd
+$material-Bgrey: #90a4ae
+$material-DBgrey: #263238
+$material-green: #4CAF50
+$mtl-textColor: #212121
+$landing-overlay: linear-gradient(170deg, rgba(4, 3, 72,0.74) 50%, rgba(0, 0, 0,0.74) 80%)
+$btn-overlay: linear-gradient(170deg, rgba(4, 3, 72,0.9) 50%, rgba(0, 0, 0,0.74) 80%)
+$box__shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+$box__shadow__hover: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
 .landing__wrapper
     margin: 4em auto
     h3
@@ -7,3 +21,39 @@
             color: #4CAF50
             font-size: 52px
             transition: all 300ms ease-in-out
+
+.card__form
+    width: 80%
+    margin: 3em auto
+    &:hover
+        box-shadow: $box__shadow__hover
+.top__section
+    background: #ACC0E9
+    height: 100px
+    border-radius: 4px 4px 0 0
+.facebook
+    position: absolute
+    transform: translate(10px, 10px)
+    a
+        text-decoration: none
+        color: $material-white
+.avatar
+    img
+        width: 150px
+        height: 150px
+
+    position: absolute
+    top: 5%
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 5%
+
+.input-field label 
+    color: #222
+.input-field input
+    &:focus 
+        border-bottom: 1px solid $material-green !important
+.input-field input:focus + label,.input-field .prefix.active 
+    color: $material-green !important
+.card-content
+    margin: 4em auto
