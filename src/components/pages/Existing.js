@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import avatar from "../../img/avatar.svg";
-class Newregister extends Component {
+class Existingregister extends Component {
   render() {
     return (
       <div>
@@ -72,13 +72,6 @@ class Newregister extends Component {
                     </select>
                   </div>
                   <div className="input-field">
-                    <i className="material-icons prefix"> bubble_chart</i>
-                    <textarea id="reasons" class="materialize-textarea" />
-                    <label for="reasons">
-                      Enter Your Reasons for joining Sanctuary Unit
-                    </label>
-                  </div>
-                  <div className="input-field">
                     <i className="material-icons prefix"> lock_outline</i>
                     <label htmlFor="password" className="active">
                       Enter Password:
@@ -92,10 +85,11 @@ class Newregister extends Component {
                     </label>
                     <input type="text" id="checkPass" className="validate" />
                   </div>
-                  <button className="btn waves-effect waves-light green">
-                    {" "}
-                    Join Us
-                  </button>
+                  <input
+                    type="submit"
+                    className="btn waves-effect waves-light green"
+                    value="Send"
+                  />
                 </form>
               </div>
             </div>
@@ -105,4 +99,4 @@ class Newregister extends Component {
     );
   }
 }
-export default Newregister;
+export default Existingregister;

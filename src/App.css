@@ -37,6 +37,9 @@
     width: 150px;
     height: 150px; }
 
+.input-field {
+  margin-bottom: 3rem; }
+
 .input-field label {
   color: #222; }
 
