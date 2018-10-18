@@ -7,6 +7,14 @@ export default () => {
         <Link to="/" className="brand-logo center black-text">
           Sanctuary Unit
         </Link>
+        <ul className="right">
+          <li>
+            <Link to="/login" className="waves-effect waves-light btn green">
+              {" "}
+              Login
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );

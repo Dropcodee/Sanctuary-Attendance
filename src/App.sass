@@ -12,6 +12,38 @@ $landing-overlay: linear-gradient(170deg, rgba(4, 3, 72,0.74) 50%, rgba(0, 0, 0,
 $btn-overlay: linear-gradient(170deg, rgba(4, 3, 72,0.9) 50%, rgba(0, 0, 0,0.74) 80%)
 $box__shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
 $box__shadow__hover: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+$break-small: 320px
+$break-tablet: 960px
+$break-tablet-rotate: 1024px
+$break-large: 1200px
+
+/* END OF VARIABLES */
+
+.landing__hero__wrapper
+    margin: 0 auto
+    width: 80%
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-right: -50%
+    transform: translate(-50%, -50%)
+.sc-bdVaJa 
+    font-size: 48px
+    text-align: center
+.push__down
+    margin-top: 3em
+.responsive__logo
+    text-align: center
+    img
+        width: 150px
+        height: 150px
+        margin-top: 1em
+.custom__nav
+    height: 60px
+a.sidenav-trigger i
+    font-size: 32px
+.icon__size
+    font-size: 42px
 .landing__wrapper
     margin: 4em auto
     h3
@@ -58,3 +90,52 @@ $box__shadow__hover: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
     color: $material-green !important
 .card-content
     margin: 4em auto
+
+/* SIDE BAR FOR ADMIN PANELS */
+// FIX SIDENAV SPACING
+.side-nav li>a 
+    padding: 0 16px
+
+//FIX SIDEBAR DIVIDERS
+.side-nav .divider 
+    margin: 0
+    height: 8px
+    border-bottom: 1px solid #e0e0e0
+    background-color: transparent
+
+
+// SIDENAV HEADER
+.sidenav-header 
+    background: $material-grey no-repeat center center
+    background-size: cover
+    margin-bottom: 0px
+    padding: 15px 0 0 15px
+    .row 
+        margin-bottom: 0
+  
+
+.sidenav-footer 
+    margin-bottom: 0px
+    padding: 0
+    .row 
+        margin-bottom: 0
+        .social-icons
+            a 
+                opacity: 0.5
+                padding: 0
+                text-align:center
+                &:hover 
+                    background-color:inherit
+                    opacity: 1
+        
+      
+    
+  
+
+@media screen and (min-width: $break-small) 
+    .custom__nav
+        height: 70px
+
+@media screen and (min-width: $break-tablet-rotate) 
+    .custom__nav
+        height: 60px

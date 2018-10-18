@@ -7,8 +7,11 @@ export default () => {
       <div className="card">
         <Link to="/registernew">
           <div className="card-image waves-effect waves-light">
-            <img src={Newmember} alt="new member registration" />
-            <span className="card-title black-text">New Members</span>
+            <img
+              src={Newmember}
+              alt="new member registration"
+              className="landing__logo"
+            />
           </div>
         </Link>
       </div>
