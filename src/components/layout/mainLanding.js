@@ -33,13 +33,13 @@ export default () => {
       <div className="container">
         <div className="landing__hero__wrapper">
           <div className="row">
-            <div className="col s12 m12 l12">
+            <div className="col s12 m12 l12 center-align">
               <img
                 src={logo}
                 alt=""
                 style={{ width: "150px", height: "150px" }}
               />
-              <div className="typed__text flow-text">
+              <div className="typed__text flow-text center-align ">
                 <Typed
                   strings={[
                     "WELCOME TO SANCTUARY UNIT",
@@ -54,7 +54,7 @@ export default () => {
               </div>
             </div>
           </div>
-          <div className="motto__wrapper">
+          <div className="motto__wrapper center-align">
             <h6>
               <i>MOTTO: SERVICE TO GOD</i>
             </h6>
