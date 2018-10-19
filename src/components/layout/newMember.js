@@ -4,13 +4,13 @@ import Newmember from "../../img/new.svg";
 export default () => {
   return (
     <div>
-      <div className="card">
+      <div className="card-large">
         <Link to="/registernew">
           <div className="card-image waves-effect waves-light">
             <img
               src={Newmember}
               alt="new member registration"
-              className="landing__logo"
+              style={{ width: "312px", height: "312px" }}
             />
           </div>
         </Link>

@@ -2,7 +2,7 @@
 /* END OF VARIABLES */
 .landing__hero__wrapper {
   margin: 0 auto;
-  padding-top: 8em;
+  padding-top: 2em;
   width: 80%;
   text-align: center; }
 
@@ -15,10 +15,6 @@
 
 .responsive__logo {
   text-align: center; }
-  .responsive__logo img {
-    width: 150px;
-    height: 150px;
-    margin-top: 1em; }
 
 .custom__nav {
   height: 60px; }
